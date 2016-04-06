@@ -1,11 +1,14 @@
 
 function init(){
-    
     attachEvents();
 }
 function attachEvents(){
     var firstName=document.getElementById("txtFirstName");
     firstName.addEventListener("keypress",alphabetsOnly)
+    var register = document.getElementById("btnRegister");
+    register.addEventListener("click",registerUser);
+    register.addEventListener('mouseover',changeColorOfButton);
+     register.addEventListener('mouseleave',changeColorOfButtonBack);
 }
 
 function alphabetsOnly(evt){
@@ -27,6 +30,18 @@ function numbersOnly(evt){
     }
 }
 
+function registerUser(){
+    console.log("registering the user");
+}
+
+function changeColorOfButton(){
+    var register = document.getElementById("btnRegister");
+    register.style="background-color:blue";
+}
+function changeColorOfButtonBack(){
+    var register = document.getElementById("btnRegister");
+    register.style="background-color:";
+}
 
 init();
 
