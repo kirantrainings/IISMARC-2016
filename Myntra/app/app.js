@@ -55,7 +55,7 @@ htmlControls.firstName              .addEventListener("keypress", utilites.alpha
           labelEmail.className="control-label col-xs-2";
           console.log(labelEmail);
           var divEmail = document.getElementById("divEmail");
-            divEmail.appendChild(labelEmail);
+            divEmail.appendChild(labelEmail);   
       }
         init();
 
