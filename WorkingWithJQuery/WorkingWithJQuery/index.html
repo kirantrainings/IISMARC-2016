@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-xs-2">First Name</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control"
+                           id="txtFirstName" placeholder="First Name"
+                           ng-model="register.firstName">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-2">Last Name</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control"
+                           id="txtLastName"
+                           placeholder="Last Name">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-2">Phone Number</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control"
+                           placeholder="Phone Number"
+                           id="txtPhoneNumber">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-2">Email</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" id="txtEmail" placeholder="email">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-2">Age</label>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control" id="txtAge" placeholder="Age">
+                </div>
+
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-2">Gender</label>
+                <div class="col-xs-4">
+                    <input type="radio" name="gender" value="M">Male
+                    <input type="radio" name="gender" value="F">Femlae
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-2" >Country</label>
+                <div class="col-xs-4">
+                    <select class="form-control" id="ddlCountry">
+                        <option value="">Please Select</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-xs-2" >State</label>
+                <div class="col-xs-4">
+                    <select class="form-control" id="ddlState">
+                        <option value="">Please Select</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+
+                <div class="col-xs-12">
+                    <label class="control-label col-xs-2"></label>
+                    <div class="col-xs-4">
+                        <button class="btn btn-primary" id="btnRegister">Register</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--<script src="jQueryApp/app.js"></script>-->
+    <script src="jQueryApp/eventsAndLoops.js"></script>
+</body>
+</html>
