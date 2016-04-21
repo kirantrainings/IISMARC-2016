@@ -4,16 +4,38 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using WorkingWithJQuery.Models;
 
 namespace WorkingWithJQuery.Controllers
 {
-    [Authorize]
-    public class ValuesController : ApiController
+    
+    public class JobsController : ApiController
     {
         // GET api/values
-        public IEnumerable<string> Get()
+        public List<Job> Get()
         {
-            return new string[] { "value1", "value2" };
+            var job = new Job();
+            //throw new NullReferenceException();
+                return job.GetJobs();
+        }
+
+
+        public List<Job> post(Job editJob)
+        {
+            var job = new Job();
+            //throw new NullReferenceException();
+            var all= job.GetJobs();
+            foreach(var item in all)
+            {
+                if (item.JobId == editJob.JobId)
+                {
+                    
+                    item.Technology = editJob.Technology;
+                    item.Description = editJob.Description;
+                    item.Technology = editJob.Technology;
+                }
+            }
+            return all;
         }
 
         // GET api/values/5
@@ -23,9 +45,6 @@ namespace WorkingWithJQuery.Controllers
         }
 
         // POST api/values
-        public void Post([FromBody]string value)
-        {
-        }
 
         // PUT api/values/5
         public void Put(int id, [FromBody]string value)

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="form-horizontal">
+        <div class="form-horizontal" id="divRegister">
             <div class="form-group">
                 <label class="control-label col-xs-2">First Name</label>
                 <div class="col-xs-4">
@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-xs-2" >Country</label>
+                <label class="control-label col-xs-2">Country</label>
                 <div class="col-xs-4">
                     <select class="form-control" id="ddlCountry">
                         <option value="">Please Select</option>
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-xs-2" >State</label>
+                <label class="control-label col-xs-2">State</label>
                 <div class="col-xs-4">
                     <select class="form-control" id="ddlState">
                         <option value="">Please Select</option>
@@ -87,9 +87,46 @@
 
 
         </div>
+
+        <table id="jobTable" class="table table-hover table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        Job Id
+                    </th>
+                    <th>
+                        Technology
+                    </th>
+                   
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Experince
+                    </th>
+                </tr>
+            </thead>
+        </table>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">Edit Job</div>
+            <div class="panel-body">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <input type="text" id="txtJobId" />
+                        <input type="text" id="txtJobDescription" />
+                        <input type="text" id="txtJobTechnology" />
+                        <input type="text" id="txtJobExpreience" />
+                        <button id="btnSave" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--<script src="jQueryApp/app.js"></script>-->
-    <script src="jQueryApp/eventsAndLoops.js"></script>
+    <!--<script src="jQueryApp/eventsAndLoops.js"></script>-->
+    <script src="jQueryApp/jobs.js"></script>
 </body>
 </html>

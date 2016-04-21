@@ -45,7 +45,6 @@
         var optionTag = $("<option>");
         $(optionTag).val(data.code);
         $(optionTag).text(data.name);
-        console.log($(optionTag));
         return optionTag;
     };
 })();
